@@ -7,13 +7,28 @@ import CommentDetail from './CommentDetail';
 const App = () => {
     return (
         <div className="ui container comments">
-            <CommentDetail/>
-            <CommentDetail/>
-            <CommentDetail/>
-            <CommentDetail/>
-            <CommentDetail/>
+            <CommentDetail
+                author="Megatron"
+                timeAgo="2am"
+                comment="Wazzuh"
+                ayvatar={faker.image.avatar()}
+            />
+            <CommentDetail
+                author="Spooderman"
+                timeAgo="3pm"
+                comment="WATHHHUUU"
+                ayvatar={faker.image.avatar()}
+            />
+            <CommentDetail
+                author="Hulk Hogan"
+                timeAgo="tomorrow at 4pm"
+                comment="Wazzaaaaaaaaa"
+                ayvatar={faker.image.avatar()}
+            />
         </div>
     );
 };
+
+
 
 ReactDOM.render(<App/>, document.querySelector('#root'));
